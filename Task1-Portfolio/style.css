@@ -1,0 +1,177 @@
+/* Global styles */
+body {
+  background-color: #f0f4f8;
+  font-family: "Arial", sans-serif;
+  color: #343a40;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: #343a40;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Main content styles */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Panel styles */
+.left-panel,
+.right-panel,
+.center-panel {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Profile image styles */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+/* List group item styles */
+.list-group-item {
+  border: none;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #495057;
+  text-align: center;
+  border-top: 1px dashed #dee2e6;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Button styles */
+.btn-primary {
+  margin-top: 20px;
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Card styles */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 992px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .header {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 1.75rem;
+    padding: 10px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .list-group-item {
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+}
+
+/* Bottom Panels */
+.bottom-panels .bottom-panel {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bottom-panels .section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #495057;
+}
